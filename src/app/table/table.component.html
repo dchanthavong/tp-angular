@@ -1,0 +1,17 @@
+
+  table works!
+  <table>
+    <div *ngFor="let user of users">
+      <tr [ngStyle]="{'color': user.color}">
+        <td>
+            {{ user.username }}
+        </td>
+        <td>
+            {{ user.gender }}
+        </td>
+        <td>
+          <button (click)="onDelete(user)">Delete user</button>
+        </td>
+      </tr>
+    </div>
+  </table>
